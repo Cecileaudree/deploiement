@@ -20,5 +20,5 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Tests
-        run: npm run test -- --no-watch --code-coverge
+        run: npm run test -- --no-watch --code-coverage
 
