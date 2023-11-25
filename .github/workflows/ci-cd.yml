@@ -19,6 +19,8 @@ jobs:
           node-version: 18.x
       - name: Install dependencies
         run: npm install
-      - name: Tests
-        run: npm run test -- --no-watch --code-coverage
+      - name: Run tests with code coverage
+        uses: coactions/setup-xvfb@v1
+        with:
+          run: npm run test -- --no-watch --code-coverage
 
